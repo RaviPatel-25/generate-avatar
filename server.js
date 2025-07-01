@@ -7,7 +7,7 @@ const PORT = 3000;
 app.use(cors());
 
 // ✅ GET route with gender and username in URL
-app.get('/generate-avatar-by-ravi-api/:gender/:username', (req, res) => {
+app.get('get/:gender/:username', (req, res) => {
   const { username, gender } = req.params;
 
   if (!username || !gender) {
